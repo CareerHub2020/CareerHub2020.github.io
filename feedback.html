@@ -1,0 +1,350 @@
+<!-- Add your content of head and header -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="IE=edge" http-equiv="X-UA-Compatible">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <meta content="description" name="description">
+  <meta name="google" content="notranslate" />
+
+  <!-- Disable tap highlight on IE -->
+  <meta name="msapplication-tap-highlight" content="no">
+  
+  <!-- for animation -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css"
+  />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <title>CareerHub- Guidance For Courses</title>  
+
+<link href="./assets/style.css" rel="stylesheet">
+<link rel = "icon" href = "favicon.ico" type = "icon"></head>
+
+<body style="text-align:justify; text-align-last:center">
+
+ <!-- Add your content of header -->
+    <header class="container-fluid">
+        <div class="topnav row justify-content-around">
+            <a class="col-md-2 col-xs-2" href="index.html"><i class="fa fa-home" aria-hidden="true"></i><span class="mob-hide">&nbsp Home</span></a>
+            <a class="col-md-2 col-xs-2" href="about.html"><i class="fa fa-users" aria-hidden="true"></i><span class="mob-hide">&nbsp About</span></a>
+            <a class="col-md-2 col-xs-2" href="overview.html"><i class="fa fa-eye" aria-hidden="true"></i><span class="mob-hide">&nbsp Overview</span></a>
+            <a class="col-md-2 col-xs-2" href="counselor.html"><i class="fa fa-search" aria-hidden="true"></i><span class="mob-hide">&nbsp Counselor</span></a>
+            <a class="col-md-2 col-xs-2" href="blogs.html"><i class="fa fa-newspaper-o" aria-hidden="true"></i><span class="mob-hide">&nbsp Blogs</span></a>
+            <a class="active col-md-2 col-xs-2" href="feedback.html"><i class="fa fa-comments" aria-hidden="true"></i><span class="mob-hide">&nbsp Feedback</span></a>
+        </div>
+    </header>
+
+<!-- Add your site or app content here -->
+<div class="background-image-container white-text-container" style="background-image: url('./assets/images/feedback-banner.png')">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row wow animate__animated animate__fadeInUp ">
+            <div class="col-xs-12 ">
+            <br><Br>
+                <img src = "assets/images/logo.png" style ="width:35%">
+                <h1 style="font-size:2.5em">Feedback</h1>
+                <p>Suggestions | Additions</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<div class="section-container section-half-background-image-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 text-column"  style="text-align:justify; text-align-last:center">
+                <h2 class="text-center wow animate__animated animate__fadeInUp">Any Suggestions?</h2>
+                <h3 style="text-align:center">Help Us Grow</h3>
+                <p>We welcome any and every kind of feedback. Do share your experience and help us improve this initiative.
+                Any course we're missing on? Any eligibility criteria listed wrong? Problem in any of the links? Do convey it to us!</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10 offset-md-1">
+                <form class="well form-horizontal" action="feedback-config.php" method="post"  id="contact_form">
+                    <fieldset>
+                        <h3>What do you think about our website?</h3>
+                        <div class="form-group col-md-12">
+                            <input type='radio' name='rating' value='rating1' style="display:inline"><br>
+                            <label for='rating4' style="display:inline">
+                                <img src="assets/images/not-good.png" title="Not Good" style="width:5%">
+                                <h4>Not Good</h4>
+                            </label>
+                            
+                            <input type='radio' name='rating' value='rating2' style="display:inline"><br>
+                            <label for='rating' style="display:inline"> 
+                                <img src="assets/images/satisfactory.png" title="satisfactory" style="width:5%">
+                                <h4>Satisfactory</h4>
+                            </label>
+                            
+                            <input type='radio' name='rating' value='rating3' style="display:inline"><br>
+                            <label for='rating2' style="display:inline">
+                                <img src="assets/images/happy.png" title="Happy" style="width:5%">
+                                <h4>Happy</h4>
+                            </label>
+                            
+                            <input type='radio' name='rating' value='rating4' style="display:inline"><br>
+                            <label for='rating3' style="display:inline">
+                                <img src="assets/images/good.png" title="Good" style="width:5%">
+                                <h4>Good</h4>
+                            </label>
+                            
+                            <input type='radio' name='rating' value='rating5' style="display:inline"><br>
+                            <label for='rating5' style="display:inline">
+                                <img src="assets/images/excellent.png" title="Excellent" style="width:5%">
+                                <h4>Excellent</h4>
+                            <label>
+                        </div>	
+                        <div class="form-group">
+                        <label class="col-md-5 control-label">Full Name</label>  
+                            <div class="col-md-5 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                                    <input  name="name" placeholder="Name" class="form-control"  type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-5 control-label">E-Mail</label>  
+                            <div class="col-md-5 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                                    <input name="email" placeholder="E-Mail Address" class="form-control"  type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-5 control-label">Phone</label>  
+                            <div class="col-md-5 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-earphone"></i></span>
+                                    <input name="phone" placeholder="(845)555-1212" class="form-control" type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                        <label class="col-md-5 control-label">Comments</label>
+                            <div class="col-md-5 inputGroupContainer">
+                                <div class="input-group">
+                                    <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
+                                    <textarea class="form-control" name="comment" placeholder="Feedback"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-md-3 control-label"></label>
+                            <div class="col-md-6">
+                                <button type="submit" class="btn btn-warning" name="submit">Send <span class="glyphicon glyphicon-send"></span></button>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br>
+
+<div class="section-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 offset-md-1 text-column"  style="text-align:justify; text-align-last:center">
+                <h2 class="text-center wow animate__animated animate__fadeInUp">Connect With Us</h2>
+                <p>Wanna talk to the Creators and know their view points?</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="assets/images/yukti.png" style="width:50%">
+                <p>Yukti Gupta<br>yuktig19@gmail.com</p>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/nishtha.png" style="width:50%">
+                <p>Nishtha Chib<br>nishthachib.nc@gmail.com</p>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/anjali.png" style="width:50%">
+                <p>Anjali Rawat<br>rawatanjali142000@gmail.com</p>
+            </div>
+            <div class="col-md-4 col-md-offset-2">
+                <img src="assets/images/twinkle.png" style="width:50%">
+                <p>Twinkle Sharma<br>twinklets065@gmail.com</p>
+            </div>
+            <div class="col-md-4">
+                <img src="assets/images/shreya.png" style="width:50%">
+                <p>Shreya Gupta<br>g10.shreya@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</div>   
+
+<br><br>
+
+<script>
+document.addEventListener("DOMContentLoaded", function (event) {
+    
+  googleMapInit(); 
+  scrollToAnchor();
+  scrollRevelation('reveal');
+});
+</script>
+<!--adding wow.js script for animation while scrolling-->
+<script src="assets/wow.min.js"></script>
+              <script>
+              new WOW().init();
+              </script>
+
+<footer class="footer-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12" style="text-align:center">
+                <p>© CareerHub</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+document.addEventListener("DOMContentLoaded", function (event) {
+  navbarToggleSidebar();
+});
+</script>
+<script>
+    
+</script>
+<script type="text/javascript" src="./assets/main.faaf51f9.js"></script>
+<script>
+      $(document).ready(function() {
+    $('#contact_form').bootstrapValidator({
+        // To use feedback icons, ensure that you use Bootstrap v3.1.0 or later
+        feedbackIcons: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+            full_name: {
+                validators: {
+                        stringLength: {
+                        min: 2,
+                    },
+                        notEmpty: {
+                        message: 'Please supply your first name'
+                    }
+                }
+            },
+             last_name: {
+                validators: {
+                     stringLength: {
+                        min: 2,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your last name'
+                    }
+                }
+            },
+            email: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your email address'
+                    },
+                    emailAddress: {
+                        message: 'Please supply a valid email address'
+                    }
+                }
+            },
+            phone: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your phone number'
+                    },
+                    phone: {
+                        country: 'US',
+                        message: 'Please supply a vaild phone number with area code'
+                    }
+                }
+            },
+            address: {
+                validators: {
+                     stringLength: {
+                        min: 8,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your street address'
+                    }
+                }
+            },
+            city: {
+                validators: {
+                     stringLength: {
+                        min: 4,
+                    },
+                    notEmpty: {
+                        message: 'Please supply your city'
+                    }
+                }
+            },
+            state: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please select your state'
+                    }
+                }
+            },
+            zip: {
+                validators: {
+                    notEmpty: {
+                        message: 'Please supply your zip code'
+                    },
+                    zipCode: {
+                        country: 'US',
+                        message: 'Please supply a vaild zip code'
+                    }
+                }
+            },
+            comment: {
+                validators: {
+                      stringLength: {
+                        min: 10,
+                        max: 200,
+                        message:'Please enter at least 10 characters and no more than 200'
+                    },
+                    notEmpty: {
+                        message: 'Please supply a description of your project'
+                    }
+                    }
+                }
+            }
+        })
+        .on('success.form.bv', function(e) {
+            $('#success_message').slideDown({ opacity: "show" }, "slow") // Do something ...
+                $('#contact_form').data('bootstrapValidator').resetForm();
+
+            // Prevent form submission
+            e.preventDefault();
+
+            // Get the form instance
+            var $form = $(e.target);
+
+            // Get the BootstrapValidator instance
+            var bv = $form.data('bootstrapValidator');
+
+            // Use Ajax to submit form data
+            $.post($form.attr('action'), $form.serialize(), function(result) {
+                console.log(result);
+            }, 'json');
+        });
+});
+
+</script>
